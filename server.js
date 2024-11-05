@@ -15,9 +15,10 @@ app.post('/send-email', (req, res) => {
     service: 'gmail',
     auth: {
       user: 'noreply.hydraulicsolutions@gmail.com', // Dirección de correo de envío
-      pass: 'contraseña_de_noreply' // Contraseña o contraseña de aplicación
+      pass: 'contraseña_de_noreply' // Contraseña o contraseña de app
     }
   });
+  
 
   const mailOptions = {
     from: email,
